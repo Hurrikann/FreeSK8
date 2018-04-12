@@ -29,7 +29,11 @@ if($_POST)
 ?>
 <?php require_once("inc/haut.inc.php"); ?>
 <?php echo $contenu; ?>
-
+<head>
+    <title>FREE SK8 - Inscription</title>
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="inscription.css">
+</head>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
     <label for="pseudo">Pseudo</label><br>
     <input type="text" id="pseudo" name="pseudo" maxlength="20" placeholder="votre pseudo" pattern="[a-zA-Z0-9-_.]{1,20}" title="caractères acceptés : a-zA-Z0-9-_." required="required"><br><br>
