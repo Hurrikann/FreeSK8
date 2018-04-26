@@ -4,15 +4,15 @@
     <!-- Meta tags -->
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="Site d'e-commerce de vente de skateboards du Groupe 4.">    
-    <meta name="author" content="Groupe 4">
+    <meta name="description" content="Site Ecommerce Free Sk8">
+    <meta name="author" content="Bastien Maurin">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="HomePage.css">
     
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
     
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -27,23 +27,22 @@
 <body>
     <header>
         <nav id="navbar">
-            <a href="#home"><img id="logo" src="img/skate.jpg" alt="Logo site"></a>
+            <a href="#home"><img id="logo" src="img/logo.png" alt="Logo site"></a>
             <ul id="nav-links">
-                <li class="nav-link"><a href="#presentation">Présentation des produits</a></li>
-                <li class="nav-link"><a href="#resume">Tous nos articles</a></li>
-                <li class="nav-link"><a href="#achievements">Réalisations artisanale</a></li>
-                <li class="nav-link"><a href="#panier">Panier</a></li>
-                <li class="nav-link"><a href="#connection">Connexion</a></li>
+                <li class="nav-link"><a href="presentation.html">Présentation des produits</a></li>
+                <li class="nav-link"><a href="artisana.html">Réalisations artisanale</a></li>
+                <li class="nav-link"><a href="panier.html">Panier</a></li>
+                <li class="nav-link"><a href="inscription.php">Inscription</a></li>
+                <li class="nav-link"><a href="connexion.php">Connexion</a></li>
             </ul>
         </nav>
     </header>
-    
-    <!--<image id="image-bg" src="img/bg-video.mp4" preload="auto" autoplay="true" loop>Vidéo d'arrière-plan</video>-->
-    <img id="image-bg" src="img/skatefond.jpeg" alt="image background">
+
+    <img id="image-bg" src="img/skatefond3.jpg" alt="image background">
     
     <section id="home">
         <div id="welcome-box">
-            <img id="portrait" src="img/skate.jpg" alt="portrait bastien maurin">
+            <img id="portrait" src="img/sk8.png" alt="sk8">
             <h1>SK8 FunShop</h1>
             <span id="subtitle">Bienvenue sur notre site de vente en ligne SK8 FunShop, ici vous pourrez en savoir plus sur nos produits, voir nos réalisations et consulter nos articles.</span>
         </div>
@@ -61,33 +60,13 @@
             <div class="row">
                 <div class="col-3"><h2 class="presentation-title">Nos catégorie</h2></div>
                 <div class="col-9">                    
-                    <div class="img-presentation-container"><img class="img-presentation" src="img/skate.jpg" alt="magie"><span class="img-presentation-text">LongBoards</span></div>
-                    <div class="img-presentation-container"><img class="img-presentation" src="img/skate.jpg" alt="series"><span class="img-presentation-text">SkateBoards</span></div>
-                    <div class="img-presentation-container"><img class="img-presentation" src="img/skate.jpg" alt="jeux-videos"><span class="img-presentation-text">LicorneBoards</span></div>                                
+                    <div class="img-presentation-container"><img class="img-presentation" src="img/longboard.jpg" alt="longboard"><span class="img-presentation-text">LongBoards</span></div>
+                    <div class="img-presentation-container"><img class="img-presentation" src="img/skateboard.jpg" alt="skateboard"><span class="img-presentation-text">SkateBoards</span></div>
+                    <div class="img-presentation-container"><img class="img-presentation" src="img/penny.jpg" alt="penny"><span class="img-presentation-text">Penny</span></div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="achievements">
-        <div class="container">
-            <div class="row">
-                <div class="col-3"><h2 class="presentation-title">Nos créations</h2></div>
-                <div class="col-9">                    
-                    <div class="img-presentation-container"><img class="img-presentation" src="img/skate.jpg" alt="magie"><span class="img-presentation-text">DragonBoard</span></div>
-                    <div class="img-presentation-container"><img class="img-presentation" src="img/skate.jpg" alt="series"><span class="img-presentation-text">JeanMichelBoard</span></div>
-                    <div class="img-presentation-container"><img class="img-presentation" src="img/skate.jpg" alt="jeux-videos"><span class="img-presentation-text">PikachuBoard</span></div>                                
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3"><h2 class="presentation-title">Nos LongBoards</h2></div>
-                <div class="col-9">                    
-                    <div class="img-presentation-container"><img class="img-presentation" src="img/skate.jpg" alt="magie"><span class="img-presentation-text">LongBaconBoard</span></div>
-                    <div class="img-presentation-container"><a href=""><img class="img-presentation" src="img/skate.jpg" alt="series"><span class="img-presentation-text">JhonnyHalidayBoard</span></a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <footer>
         <div class="container">
             <div class="row">
@@ -97,7 +76,7 @@
                         <table>
                             <tr>
                                 <td><label for="email">Adresse Email</label></td>
-                                <td><input name="email" type="email" placeholder="maurin62@yahoo.fr" id="email"></td>
+                                <td><input name="email" type="email" placeholder="sk8@yahoo.fr" id="email"></td>
                             </tr>
                             <tr>
                                 <td><label for="subject">Sujet</label></td>
@@ -114,10 +93,9 @@
                     </form>
                 </div>
                 <div class="col-6">
-                    <h3 class="footer-title">Me suivre</h3>
+                    <h3 class="footer-title">Nous suivre</h3>
                     <div class="col-3"><a href="https://www.facebook.com/bastien.maurin.7"><img class="social-link" src="img/fb-icon.png" alt="facebook"></a></div>
                     <div class="col-3"><a href="https://twitter.com/"><img class="social-link" src="img/twitter-icon.png" alt="twitter"></a></div>
-                    <div class="col-3"><a href=""><img class="social-link" src="img/git-icon.png" alt="github"></a></div>
                     <div class="col-3"><a href="https://www.linkedin.com/in/bastien-maurin-366061134/"><img class="social-link" src="img/linkedin-icon.png" alt="linkedin"></a></div>
                 </div>
             </div>
