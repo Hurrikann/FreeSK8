@@ -2,7 +2,7 @@ html{font-family: roboto;}
 form{
     position: relative;
     margin-left: 40%;
-    margin-right: 30%;
+    margin-right: 40%;
     margin-bottom: 5%;
     padding: 50px;
     background-color:;
@@ -12,4 +12,8 @@ form h3{
     text-align: center;
     font-size: 30px;
     font-variant: inherit;
+}
+
+form label{
+    padding-left: 40%;
 }
