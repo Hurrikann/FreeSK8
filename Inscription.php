@@ -54,8 +54,8 @@ if($_POST)
         <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required="required"><br><br>
 
         <label>Civilité</label><br>
-        <input class="sexe" name="sexe" value="m" checked="" type="radio">Homme
-        <input class="sexe" name="sexe" value="f" type="radio">Femme<br><br>
+        <input class="sexe" name="sexe" value="m" checked="" type="radio"><p>Homme</p>
+        <br><input class="sexe" name="sexe" value="f" type="radio"><p>Femme</p><br><br>
 
         <label for="ville">Ville</label><br>
         <input type="text" id="ville" name="ville" required="required" placeholder="votre ville" pattern="[a-zA-Z0-9-_.]{5,15}" title="caractères acceptés : a-zA-Z0-9-_."><br><br>
