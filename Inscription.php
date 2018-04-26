@@ -33,13 +33,16 @@ if($_POST)
 <html>
     <head>
         <title>Inscription - FreeSK8</title>
+        <link rel="stylesheet" media="screen" href="style/inscription.css"/>
+        <link rel="stylesheet" media="screen" href="style/homepage.css"/>
     </head>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <h3><strong>Inscription</strong></h3>
         <label for="pseudo">Pseudo</label><br>
         <input type="text" id="pseudo" name="pseudo" maxlength="20" placeholder="votre pseudo" pattern="[a-zA-Z0-9-_.]{1,20}" title="caractères acceptés : a-zA-Z0-9-_." required="required"><br><br>
 
         <label for="mdp">Mot de passe</label><br>
-        <input type="password" id="mdp" name="mdp" required="required"><br><br>
+        <input type="password" id="mdp" name="mdp" placeholder="votre mot de passe" required="required"><br><br>
 
         <label for="nom">Nom</label><br>
         <input type="text" id="nom" name="nom" placeholder="votre nom" required="required"><br><br>
@@ -61,7 +64,7 @@ if($_POST)
         <input type="text" id="code_postal" name="code_postal" required="required" placeholder="code postal" pattern="[0-9]{5}" title="5 chiffres requis : 0-9"><br><br>
 
         <label for="adresse">Adresse</label><br>
-        <textarea id="adresse" name="adresse" required="required" placeholder="votre dresse" pattern="[a-zA-Z0-9-_.]{5,15}" title="caractères acceptés :  a-zA-Z0-9-_."></textarea><br><br>
+        <textarea id="adresse" name="adresse" required="required" placeholder="votre adresse" pattern="[a-zA-Z0-9-_.]{5,15}" title="caractères acceptés :  a-zA-Z0-9-_."></textarea><br><br>
 
         <input name="inscription" value="S'inscrire" type="submit">
     </form>
