@@ -31,14 +31,14 @@
             $products = explode(',', $_COOKIE['cart']);
 
             foreach ($products as $product_id) {
-                $sql = "SELECT * from products WHERE id='".$product_id."'";
+                $sql = "SELECT * from produits WHERE id_produit='".$product_id."'";
                 $result = $mysqli->query($sql);
 
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         $cart[] = [
-                            'name' => $row['name'],
-                            'price' => $row['price'],
+                            'nom' => $row['nom'],
+                            'prix' => $row['prix'],
                         ];
                     }
                 }
@@ -47,11 +47,11 @@
             $total = 0;
 
             foreach ($cart as $item) {
-                $total = $total + $item['price'];
+                $total = $total + $item['prix'];
 
                 echo "<ul>
-                    <li>".$item['name']."</li>
-                    <li>".$item['price']."</li>
+                    <li>".$item['nom']."</li>
+                    <li>".$item['prix']."</li>
                 </ul>";
             }
 

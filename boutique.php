@@ -37,25 +37,24 @@
             die();
         }
 
-        $sql = "SELECT * from products";
+        $sql = "SELECT * from produits";
         $result = $mysqli->query($sql);
-
 
         // Liste des produits
         echo "<ul class='products-list'>";
         echo "<form method='post' action='".$_SERVER['PHP_SELF']."'>";
 
-        if ($result['num_rows'] > 0) {
+        //if ($result['num_rows'] > 0) {
             while($row = $result->fetch_assoc()) {
                 echo "<li>
-                    <p>".$row['name']." - ".$row['price']."</p>
-                    <input type='hidden' value='".$row['id']."' name='product_id'>
+                    <p>".$row['nom']." - ".$row['prix']."</p>
+                    <input type='hidden' value='".$row['id_produit']."' name='product_id'>
                     <input type='submit' value='Ajouter au panier' name='addToCart'>
                 </li>";
             }
-        } else {
-            echo "La boutique ne contient aucun produits.";
-        }
+        //} else {
+        //    echo "La boutique ne contient aucun produits.";
+        //}
 
 
         echo "</form>";
