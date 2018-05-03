@@ -45,7 +45,8 @@ include './menu.php';
         <div class="row">
             <div class="col-3"><h2 class="presentation-title">Qui sommes-nous ?</h2></div>
             <div class="col-9">
-                <p></p>
+                <p>SK8 Fun shop vend tout ce que vous souhaité dans le domaine du skateboard. Nous vous proposons un large choix de skateboard, longboard et tout type de planche a roulette.
+                    Sk8 Fun shop est constitué avant tout d'une équipe de passionnés de skateboard et de fabrication artisanale, n'hésitez pas à nous adresser toute vos demandes et questions.</p>
             </div>
         </div>
         <hr class="separator">
